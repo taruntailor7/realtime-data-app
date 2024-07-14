@@ -25,7 +25,7 @@ app.get('/', (req, res) => {
 
 app.use('/api/prices', priceRoutes);
 
-setInterval(pollData, 3000);
+setInterval(pollData, 4000); // Every 4 seconds this will be called and saved fetched latest data and saved in to MongoDB
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
