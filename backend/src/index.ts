@@ -25,7 +25,7 @@ app.get('/', (req, res) => {
 
 app.use('/api/prices', priceRoutes);
 
-setInterval(pollData, 10000);
+setInterval(pollData, 3000);
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
