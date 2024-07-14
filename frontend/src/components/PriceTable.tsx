@@ -47,7 +47,7 @@ const PriceTable: React.FC<PriceTableProps> = ({ symbol }) => {
             ))
           ) : (
             <tr>
-              <td colSpan={3} className="px-4 py-2 text-center">No data available</td>
+              <td colSpan={3} className="px-4 py-2 text-center">Loading...</td>
             </tr>
           )}
         </tbody>
