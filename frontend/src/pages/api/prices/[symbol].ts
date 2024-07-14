@@ -2,7 +2,7 @@ import { NextApiRequest, NextApiResponse } from 'next';
 import axios from 'axios';
 
 // If local server running localhost will work 
-const BACKEND_URL = 'https://realtime-data-app.onrender.com/api/prices' || 'http://localhost:5000/api/prices'; // Your backend API URL
+const BACKEND_URL = 'http://localhost:5000/api/prices'; // Your backend API URL
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   const { symbol } = req.query;
