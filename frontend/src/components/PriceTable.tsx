@@ -15,7 +15,7 @@ const PriceTable: React.FC<PriceTableProps> = ({ symbol }) => {
   useEffect(() => {
     const fetchPrices = async () => {
       try {
-        const response = await axios.get(`/api/prices/${symbol}`);
+        const response = await axios.get(`https://realtime-data-app.onrender.com/api/prices/${symbol}`);
         dispatch(setPrices(response.data));
       } catch (error) {
         console.error('Error fetching prices:', error);
